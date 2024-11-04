@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
+import Welcome from "./pages/welcome"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Dashboard from "./pages/Dashboard"
@@ -12,6 +12,7 @@ import Attendance from './components/Attendance'
 import Timetable from './components/Timetable'
 import Profile from './components/Profile'
 import {openContext} from './context/context'
+import Home from './pages/Home'
 
 
 import {Route,Routes} from "react-router-dom"
@@ -29,7 +30,8 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Welcome/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/dashboard" element={<Dashboard setIsLoggedIn={setIsLoggedIn}/>} />

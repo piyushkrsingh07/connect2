@@ -46,7 +46,7 @@ const Login = (props) => {
 
         setIsLoggedIn(true);
         toast.success("Logged In Successfully");
-        navigate("/dashboard");
+        navigate("/home");
     } else {
        
         toast.error(data.error||"Password Or Email is incorrect");
