@@ -16,6 +16,7 @@ const Attendance = () => {
     try {
       
    const token=localStorage.getItem('authToken');
+   console.log(token,"uuhuftre")
   let response=await fetch(`https://project-backend-mbiw.vercel.app/api/attendance/update`,{
     method:"POST",
     headers:{
@@ -23,7 +24,9 @@ const Attendance = () => {
       'Authorization': `Bearer ${token}`
     },
     body:JSON.stringify(Attendance),
+   
   })
+  console.log(response);
   const data=await response.json();
 
 

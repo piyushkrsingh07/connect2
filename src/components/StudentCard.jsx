@@ -30,25 +30,28 @@ const StudentCard = ({data}) => {
   return (
         <div >
           
-        <div className='p-10 flex flex-col relative w-full space-y-2 border 
-        rounded-sm hover:scale-105 transition-all duration-200 items-center h-[390px] text-white '>
-    
-        <img src={data.src} alt="" className=' w-[115px] rounded-full mb-6 h-32' />
+        <div className='p-10 flex flex-col relative w-[280px] space-y-2 border 
+         hover:scale-105 transition-all duration-200 items-center h-[390px] rounded-3xl mx-auto'>
+
      
+        <img src={data.src} alt="" className=' w-[115px] rounded-full mb-6 h-32' />
+
+     <div className='absolute h-[290px] top-[90px] left-0 w-full  bg-black rounded-3xl text-white flex flex-col items-center pt-[100px] z-[-1] space-y-1.5'>
     <div>
        Name: {data.name}
 
     </div>
-    <div>
+    {/* <div>
         Roll no:{data.rollno}
 
-    </div>
-    <div>
+    </div> */}
+    {/* <div>
         UserId:{data.userId}
-    </div>
+    </div> */}
     <div>
         Date:{data.date}
     </div>
+  
     {/* <div>
         {data.remark}
     </div> */}
@@ -67,6 +70,7 @@ const StudentCard = ({data}) => {
 
 )
     }
+    </div>
     </div>
     </div>
 

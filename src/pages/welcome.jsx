@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { FcGoogle } from "react-icons/fc";
 const Welcome = () => {
   return (
-    <div className='flex bg-black  px-0 py-[90px] h-[600px]'>
+    <div className='flex bg-black  px-0 py-[90px] h-screen overflow-x-hidden overflow-y-hidden'>
     <div className='mt-[-70px] px-0 py-0 ml-[-20px]'>
   <img src="https://ucarecdn.com/9b3d6b61-07c7-48b8-8398-dc37e38bcce7/-/preview/1000x1000/" alt="" className='w-[70%]  '/>
     </div>

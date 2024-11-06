@@ -79,7 +79,7 @@ const Signup = (props) => {
         });
     }
   return (
-    <div className='flex bg-black h-[700px]'>
+    <div className='flex bg-black h-screen '>
         <div>
           <img src="https://ucarecdn.com/ba7721e5-2943-429b-892d-a6134ea133f6/-/preview/982x1000/" alt="" className='w-[800px] h-[550px]'/>
         </div>
